@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<a href="{{ url('/employees') }}"> Click Here to start</a>
                 </div>
             </div>
         </div>

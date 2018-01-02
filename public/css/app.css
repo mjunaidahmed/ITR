@@ -31,57 +31,7 @@ hr.style6 {
 	background-color: #fff;
 	border-top: 2px dotted #8c8b8b;
 }
-
-hr.style7 {
-	border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
-}
-
-
-hr.style8 {
-	border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
-}
-hr.style8:after {
-	content: '';
-	display: block;
-	margin-top: 2px;
-	border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
-}
-
-hr.style9 {
-	border-top: 1px dashed #8c8b8b;
-	border-bottom: 1px dashed #fff;
-}
-
-hr.style10 {
-	border-top: 1px dotted #8c8b8b;
-	border-bottom: 1px dotted #fff;
-}
-
-
-hr.style11 {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
-}
-
-
-hr.style12 {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
-    border: 0;
-}
-
-hr.style13 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
-
-hr.style14 { 
+hr.style7 { 
   border: 0; 
   height: 1px; 
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -91,11 +41,11 @@ hr.style14 {
 }
 
 
-hr.style15 {
+hr.style8 {
 	border-top: 4px double #8c8b8b;
 	text-align: center;
 }
-hr.style15:after {
+hr.style9:after {
 	content: '\002665';
 	display: inline-block;
 	position: relative;
@@ -106,10 +56,10 @@ hr.style15:after {
 	font-size: 18px;
 }
 
-hr.style16 { 
+hr.style10 { 
   border-top: 1px dashed #8c8b8b; 
 } 
-hr.style16:after { 
+hr.style11:after { 
   content: '\002702'; 
   display: inline-block; 
   position: relative; 
@@ -120,13 +70,7 @@ hr.style16:after {
   color: #8c8b8b; 
   font-size: 18px; 
 }
-
-
-hr.style17 {
-	border-top: 1px solid #8c8b8b;
-	text-align: center;
-}
-hr.style17:after {
+hr.style13:after {
 	content: '§';
 	display: inline-block;
 	position: relative;

@@ -26,7 +26,7 @@
 
             <strong>First Name:</strong>
 
-            {!! Form::text('firstname', null, array('placeholder' => 'Firstname','class' => 'form-control')) !!}
+            {!! Form::text('firstname', null, array('placeholder' => 'First name','class' => 'form-control')) !!}
 
         </div>
 
@@ -37,7 +37,7 @@
 
             <strong>Last Name:</strong>
 
-            {!! Form::text('lastname', null, array('placeholder' => 'Lastname','class' => 'form-control')) !!}
+            {!! Form::text('lastname', null, array('placeholder' => 'Last name','class' => 'form-control')) !!}
 
         </div>
 
