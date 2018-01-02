@@ -24,7 +24,7 @@
     </div>
 
 @endif
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
 
     <tr>
 
@@ -34,7 +34,7 @@
         <th>Company</th>
         <th>Department</th>
         <th>Status</th>
-        <th width="140px" class="text-center">
+        <th width="130px" class="text-center">
 
             <a class="btn btn-success btn-sm" href="{{ route('employees.create') }}"><i class="glyphicon glyphicon-plus"></i> New Record</a>
 
