@@ -1,5 +1,4 @@
-@extends('layouts.default')
-
+@extends('layouts.app')
 @section('content')
 
 <div class="row">
@@ -15,7 +14,7 @@
     </div>
 
 </div>
-
+<hr class="style2">
 @if ($message = Session::get('success'))
 
     <div class="alert alert-success">
@@ -25,7 +24,6 @@
     </div>
 
 @endif
-
 <table class="table table-bordered">
 
     <tr>
@@ -53,10 +51,13 @@
     <td>{{ $employee->lastname }}</td>
     <td>{{ $employee->company }}</td>
     <td>{{ $employee->department }}</td>
-    <td>{{ $employee->status }}</td>
+    @if($employee->status)
+    <td>IN</td>
+    @else
+    <td style="color: red">OUT</td>
+    @endif
     <td>
-
-        <a class="btn btn-info btn-sm" href="{{ route('employees.show',$employee->id) }}"><i class="glyphicon glyphicon-check"></i></a>
+        <a class="btn btn-info btn-sm" href="{{ route('employees.show',$employee->id) }}"><i class="glyphicon glyphicon-adjust"></i></a>
 
         <a class="btn btn-primary btn-sm" href="{{ route('employees.edit',$employee->id) }}"><i class="glyphicon glyphicon-pencil"></i></a>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+@extends('layouts.app')
 <html lang="en">
 
 <head>

@@ -20,11 +20,9 @@ class EmployeeController extends Controller
 
     {
 
-        $employees= Employee::latest()->paginate(10);
+        $employees= Employee::latest()->paginate(8);
 
-        return view('employees.index',compact('employees'))
-
-            ->with('i', ($request->input('page', 1) - 1) * 10);
+        return view('employees.index',compact('employees'));
 
     }
 

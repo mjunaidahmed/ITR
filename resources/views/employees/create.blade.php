@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 
 @section('content')
 
@@ -16,13 +16,14 @@
 
         	<br/>
 
-            <a class="btn btn-primary" href="{{ route('employees.index') }}"> <i class="glyphicon glyphicon-arrow-left"></i></a>
+            <a class="btn btn-primary" href="{{ route('employees.index') }}"> <i class="glyphicon glyphicon-arrow-left"></i> Back</a>
 
         </div>
 
     </div>
 
 </div>
+<hr class="style2">
 
 {!! Form::open(array('route' => 'employees.store','method'=>'POST')) !!}
 

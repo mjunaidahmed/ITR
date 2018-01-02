@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 @section('content')
 
 <div class="row">
@@ -15,14 +15,14 @@
 
             <br/>
 
-            <a class="btn btn-primary" href="{{ route('employees.index') }}"> <i class="glyphicon glyphicon-arrow-left"></i></a>
+            <a class="btn btn-primary" href="{{ route('employees.index') }}"> <i class="glyphicon glyphicon-arrow-left"></i> Back</a>
 
         </div>
 
     </div>
 
 </div>
-
+<hr class="style2">
 {!! Form::model($employee, ['method' => 'PATCH','route' => ['employees.update', $employee->id]]) !!}
 
     @include('employees.form')
