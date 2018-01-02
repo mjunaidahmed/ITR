@@ -7,7 +7,7 @@
 
         <div class="pull-left">
 
-            <h2>Employee Records</h2>
+            <h2>Employee Record</h2>
 
         </div>
 
@@ -30,31 +30,44 @@
 
         <div class="form-group">
 
-            <strong>Please choose your name from the list:</strong>
+            <strong>First Name:</strong>
 
             {{ $employee->firstname}}
 
         </div>
         <div class="form-group">
-            <select>
-                  @foreach($employee as $record)
-                  <option>{{ $record->firstname }}</option>
-                
-            </select>
-      
+
+            <strong>Last Name:</strong>
+
+            {{ $employee->lastname}}
+
         </div>
-       
+        <div class="form-group">
+
+            <strong>Company:</strong>
+
+            {{ $employee->company}}
+
+        </div>
+        <div class="form-group">
+
+            <strong>Department:</strong>
+
+            {{ $employee->department}}
+
+        </div>
+
     </div>
 
     <div class="col-xs-4 col-sm-4 col-md-4">
 
         <div class="form-group">
 
-            <strong>Current Status:</strong>
+            <strong>Status:</strong>
             @if($employee->status)
-            <h1>Clocked IN</h1>
+            <h1>IN</h1>
             @else
-            <h1>Clocked OUT</h1>
+            <h1>OUT</h1>
             @endif
 
         </div>
