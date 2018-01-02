@@ -56,7 +56,7 @@ class EmployeeController extends Controller
 
     }
 
-    public function show($id)
+   public function show($id)
 
     {
 
@@ -65,7 +65,7 @@ class EmployeeController extends Controller
         return view('employees.show',compact('employee'));
 
     }
-
+    
     public function edit($id)
 
     {
@@ -107,6 +107,15 @@ class EmployeeController extends Controller
         return redirect()->route('employees.index')
 
                         ->with('success','Record deleted successfully');
+
+    }
+    public function status($id)
+
+    {
+
+        $employee= Employee::find($id);
+
+        return view('employees.status',compact('employee'));
 
     }
 

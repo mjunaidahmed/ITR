@@ -58,9 +58,7 @@
     @endif
     <td>
         <a class="btn btn-info btn-sm" href="{{ route('employees.show',$employee->id) }}"><i class="glyphicon glyphicon-adjust"></i></a>
-
         <a class="btn btn-primary btn-sm" href="{{ route('employees.edit',$employee->id) }}"><i class="glyphicon glyphicon-pencil"></i></a>
-
         {!! Form::open(['method' => 'DELETE','route' => ['employees.destroy', $employee->id],'style'=>'display:inline']) !!}
 
         <button type="submit" style="display: inline;" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i></button>
